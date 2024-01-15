@@ -1,14 +1,14 @@
 Создание приложения в Андроид студио с несколькими активити:
 1. Если несколько активити - каждый надо прописывать в Android.Manifest
 2. Для работы binding надо в build.gradle.kts(:app) добавить:
-   ```
+   ```java
    viewBinding {
      enable = true
    }
    ```
 3. Работа с передачей данных:
    Получение из второй активити:
-   ```
+   ```java
    public static Intent createIntent(Context context, String text) {
         Intent intent = new Intent(context, SecondActivity.class);
         intent.putExtra(EXTRA_TEXT_KEY, text); //EXTRA_TEXT_KEY - статический ключ для передачи
@@ -25,7 +25,7 @@
    ```
 
    В первой активити:
-   ```
+   ```java
    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
