@@ -8,7 +8,7 @@ import android.os.Bundle;
 
 import com.example.android.databinding.ActivityInfoBinding;
 
-public class InfoActivity extends AppCompatActivity {
+public class InfoActivity extends Class_Lifestyle {
     private ActivityInfoBinding binding;
     private static final String EXTRA_TEXT_KEY = "extra_text_key";
 
@@ -17,6 +17,7 @@ public class InfoActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_TEXT_KEY, text);
         return intent;
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
