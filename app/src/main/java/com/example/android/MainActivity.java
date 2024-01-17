@@ -40,7 +40,7 @@ public class MainActivity extends Class_Lifestyle {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater(), null, false);
-        setContentView(R.layout.activity_main);
+        setContentView(binding.getRoot());
 
         binding.loginbtn.setOnClickListener(v -> {
             String email = binding.username.getText().toString();
